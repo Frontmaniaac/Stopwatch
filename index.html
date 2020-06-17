@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p class="info">
+            <i class="fas fa-question"></i>
+        </p>
+        <h1>Stopwatch</h1>
+        <p class="stopWatch">0:00</p>
+        <p class="time">0:00</p>
+
+        <div class="buttons">
+            <button class="start"><i class="fas fa-play"></i></button>
+            <button class="pause"><i class="fas fa-pause"></i></button>
+            <button class="stop"><i class="fas fa-stop"></i></button>
+            <button class="reset"><i class="fas fa-times"></i></button>
+            <button class="history"><i class="fas"></i>Time history</button>
+        </div>
+        <ul class="time-list"></ul>
+
+    </div>
+    <div class="modal-shadow">
+        <div class="modal">
+            <h3>Instruction:</h3>
+            <p><i class="fas fa-play"></i> - play</p>
+            <p><i class="fas fa-pause"></i> - pause</p>
+            <p><i class="fas fa-stop"></i> - new time</p>
+            <p><i class="fas fa-times"></i> - reset everything</p>
+            <p><strong>Time history</strong> - see your latest times</p>
+            <button class="close">Close</button>
+        </div>  
+    </div>
+    
+    <script src="code.js"></script>
+</body>
+</html>
